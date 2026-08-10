@@ -3,26 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hassaan Raza</title>
-<style>
-  body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #0f0f0f;
-    color: #f5f5f5;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-  h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-  }
-</style>
+<title>Hassaan Raza — AI/ML Engineer</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hassaan Raza</h1>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="nav-mark">hassaan.raza</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-bg" style="background-image: url('images/hero_gradient_blue.jpg');"></div>
+  <div class="wrap">
+    <div class="eyebrow">final-year software engineer · ai/ml</div>
+    <h1>I don't just use AI APIs, I build and ship the systems behind them, ten deployed and counting.</h1>
+    <p class="sub">Final-year Software Engineering student in Lahore. RAG pipelines, agentic systems, and applied ML, built for real users, not demos.</p>
+    <a href="projects.html" class="btn">See the work</a>
+    <div class="stat-line">
+      <span>10+</span> apps shipped &nbsp;·&nbsp; <span>RAG</span> systems &nbsp;·&nbsp; <span>Agentic</span> pipelines &nbsp;·&nbsp; <span>20</span> Anthropic certs
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Featured work</h2>
+    <p class="section-title">Three that show the range</p>
+    <div class="projects-grid" style="grid-template-columns: repeat(3, 1fr);">
+
+      <div class="project-card">
+        <img src="images/project_verdictai.png" alt="VerdictAI screenshot">
+        <div class="project-body">
+          <h3>VerdictAI</h3>
+          <div class="project-tag">RAG · Legal Intelligence</div>
+          <p>Upload any legal document, ask in plain English, get cited answers. Clause-aware retrieval, not keyword search.</p>
+          <div class="project-links"><a href="projects.html">Read the case →</a></div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project_jobee.png" alt="Jobee screenshot">
+        <div class="project-body">
+          <h3>Jobee</h3>
+          <div class="project-tag">Agentic · Job Matching</div>
+          <p>Upload a CV, Jobee scans seven job sources at once and sorts everything by real fit, not keyword overlap.</p>
+          <div class="project-links"><a href="projects.html">Read the case →</a></div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project_nanocodegpt.png" alt="NanoCodeGPT screenshot">
+        <div class="project-body">
+          <h3>NanoCodeGPT</h3>
+          <div class="project-tag">From Scratch · Transformers</div>
+          <p>A decoder-only transformer built from zero, no pretrained weights, trained on 8k Python functions.</p>
+          <div class="project-links"><a href="projects.html">Read the case →</a></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Hassaan Raza · Lahore, Pakistan · built with plain HTML, shipped on GitHub Pages</div>
+</footer>
+
 </body>
 </html>

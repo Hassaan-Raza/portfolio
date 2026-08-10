@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Hassaan Raza</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="nav-mark">hassaan.raza</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section style="padding-top: 60px;">
+  <div class="wrap">
+    <h2>Case studies</h2>
+    <p class="section-title">What I built, and why it works the way it does</p>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <img src="images/project_verdictai.png" alt="VerdictAI screenshot">
+        <div class="project-body">
+          <h3>VerdictAI</h3>
+          <div class="project-tag">RAG · Legal document intelligence</div>
+          <div class="case">
+            <div class="case-beat">
+              <b>The problem</b>
+              Legal documents are dense and full-text search doesn't answer the actual question someone has, it just finds keyword matches with no sense of which clause governs the situation.
+            </div>
+            <div class="case-beat">
+              <b>What I did</b>
+              Built a RAG pipeline over uploaded contracts, NDAs, leases, and court filings using ChromaDB for clause-aware retrieval and Ollama Cloud for generation, so answers are grounded in the specific document, not general legal knowledge, and every answer cites the clause it came from.
+            </div>
+            <div class="case-beat">
+              <b>What came of it</b>
+              A working app that takes any PDF or text legal document and answers plain-English questions with citations back to the source clause, with an explicit disclaimer that it's information, not legal advice.
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://verdictai-9zjwujsqyk2gsccfdpf9an.streamlit.app/" target="_blank">Live demo →</a>
+            <a href="https://github.com/Hassaan-Raza/VerdictAI" target="_blank">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project_jobee.png" alt="Jobee screenshot">
+        <div class="project-body">
+          <h3>Jobee</h3>
+          <div class="project-tag">Agentic · Job & internship matching</div>
+          <div class="case">
+            <div class="case-beat">
+              <b>The problem</b>
+              Job searching means checking seven different boards by hand and re-reading listings that don't actually match your profile, most of the time spent filtering, not applying.
+            </div>
+            <div class="case-beat">
+              <b>What I did</b>
+              Built a pipeline that extracts a candidate profile from an uploaded CV, fires parallel searches across seven job sources, scores every result with embedding similarity against the full profile, and applies a geographic proximity multiplier so local roles rank appropriately against remote ones. Borderline matches get a second AI reranking pass instead of being dropped outright.
+            </div>
+            <div class="case-beat">
+              <b>What came of it</b>
+              Every search sorts into three tiers, strong matches, worth a look, and everything else, instead of one long undifferentiated list. Nothing is thrown away, just ranked honestly.
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://jobeee.streamlit.app/" target="_blank">Live demo →</a>
+            <a href="https://github.com/Hassaan-Raza/Jobee_AgenticAI" target="_blank">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project_nanocodegpt.png" alt="NanoCodeGPT screenshot">
+        <div class="project-body">
+          <h3>NanoCodeGPT</h3>
+          <div class="project-tag">From scratch · Decoder-only transformer</div>
+          <div class="case">
+            <div class="case-beat">
+              <b>The problem</b>
+              Using an API is easy. Understanding what's actually happening inside a language model, attention, tokenization, sampling, is a different skill, and it's one that's easy to skip if you only ever call someone else's endpoint.
+            </div>
+            <div class="case-beat">
+              <b>What I did</b>
+              Built a decoder-only GPT-2-style transformer from scratch in PyTorch, no pretrained weights, trained on a dataset of 8,000 Python functions, with exposed controls for temperature, top-k sampling, and max tokens so the model's behavior is visible, not hidden behind a chat interface.
+            </div>
+            <div class="case-beat">
+              <b>What came of it</b>
+              A small (~10M parameter) model that completes real Python function signatures, and a working understanding of the mechanics that every hosted LLM API abstracts away.
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Hassaan-Raza" target="_blank">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Also shipped</h2>
+    <p class="section-title" style="margin-bottom: 20px;">More real, deployed work</p>
+    <p style="color: var(--text-dim); max-width: 640px;">
+      WayFairy (a 4-agent CrewAI travel planner with live web search), MediScan (medical diagnostics support), and an Eccountant ERP chatbot round out the portfolio. Full case write-ups for these are still in progress, see the <a href="about.html" style="color: var(--gold);">still-ugly list</a>.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Hassaan Raza · Lahore, Pakistan · built with plain HTML, shipped on GitHub Pages</div>
+</footer>
+
+</body>
+</html>
