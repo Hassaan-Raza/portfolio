@@ -49,9 +49,10 @@ nav .wrap {
 }
 .nav-mark {
   font-family: var(--mono);
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 700;
   color: var(--gold);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   text-decoration: none;
 }
 .nav-links {
