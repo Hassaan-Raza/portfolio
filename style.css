@@ -232,7 +232,7 @@ h2 {
 }
 .contact-links a { text-decoration: none; color: var(--text); }
 .contact-links a:hover { color: var(--gold); }
-.contact-links span { color: var(--text-dim); display: inline-block; width: 90px; }
+.contact-links span { color: var(--text-dim); display: inline-block; width: 120px; }
 
 footer {
   border-top: 1px solid var(--border);
