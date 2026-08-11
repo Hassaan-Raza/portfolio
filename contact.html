@@ -3,7 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — Hassaan Raza</title>
+<title>Contact | Hassaan Raza</title>
+<meta name="description" content="Get in touch about AI/ML engineering work. Email, LinkedIn, GitHub, CV download, and a contact form.">
+<meta name="author" content="Hassaan Raza">
+<link rel="canonical" href="https://hassaan-raza.github.io/portfolio/contact.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact | Hassaan Raza">
+<meta property="og:description" content="Get in touch about AI/ML engineering work. Email, LinkedIn, GitHub, CV download, and a contact form.">
+<meta property="og:url" content="https://hassaan-raza.github.io/portfolio/contact.html">
+<meta property="og:image" content="https://hassaan-raza.github.io/portfolio/images/og-preview.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact | Hassaan Raza">
+<meta name="twitter:description" content="Get in touch about AI/ML engineering work. Email, LinkedIn, GitHub, CV download, and a contact form.">
+<meta name="twitter:image" content="https://hassaan-raza.github.io/portfolio/images/og-preview.jpg">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -57,8 +72,18 @@
       <label for="message">Message</label>
       <textarea id="message" name="message" rows="5" required></textarea>
 
-      <button type="submit" class="btn form-btn">Send message</button>
+      <button type="submit" class="btn form-btn" id="sendBtn">Send message</button>
     </form>
+
+<script>
+  // Stops a fast double-click sending the same message twice.
+  document.querySelector('.contact-form').addEventListener('submit', function () {
+    var b = document.getElementById('sendBtn');
+    b.disabled = true;
+    b.textContent = 'Sending...';
+    b.style.opacity = '0.5';
+  });
+</script>
   </div>
 </section>
 
